@@ -12,19 +12,44 @@
 <meta name="author" content="赵魁生">
 
 
-    
-    
+
+<meta name="description" content="开发过程中会遇到的一些问题，Swagger注意事项  
+概要：
 
 
-<meta name="description" content="积少成多">
-<meta property="og:type" content="website">
-<meta property="og:title" content="努力做到化繁为简">
-<meta property="og:url" content="https://zhaoks.github.io/index.html">
+加入注解
+注解使用
+注意事项
+
+
+基本事项引入jar12345678910&amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;io.springfox&amp;lt;/groupId&amp;gt;	&amp;lt;artifactId&amp;gt;springfox-swagger2&amp;lt;/artifactId&amp;gt;	&amp;lt;versio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="swagger 使用注意事项">
+<meta property="og:url" content="https://zhaoks.github.io/2016/12/26/swagger/index.html">
 <meta property="og:site_name" content="努力做到化繁为简">
-<meta property="og:description" content="积少成多">
+<meta property="og:description" content="开发过程中会遇到的一些问题，Swagger注意事项  
+概要：
+
+
+加入注解
+注解使用
+注意事项
+
+
+基本事项引入jar12345678910&amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;io.springfox&amp;lt;/groupId&amp;gt;	&amp;lt;artifactId&amp;gt;springfox-swagger2&amp;lt;/artifactId&amp;gt;	&amp;lt;versio">
+<meta property="og:updated_time" content="2016-12-26T07:52:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="努力做到化繁为简">
-<meta name="twitter:description" content="积少成多">
+<meta name="twitter:title" content="swagger 使用注意事项">
+<meta name="twitter:description" content="开发过程中会遇到的一些问题，Swagger注意事项  
+概要：
+
+
+加入注解
+注解使用
+注意事项
+
+
+基本事项引入jar12345678910&amp;lt;dependency&amp;gt;	&amp;lt;groupId&amp;gt;io.springfox&amp;lt;/groupId&amp;gt;	&amp;lt;artifactId&amp;gt;springfox-swagger2&amp;lt;/artifactId&amp;gt;	&amp;lt;versio">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -52,13 +77,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>努力做到化繁为简</title>
+<title>swagger 使用注意事项 | 努力做到化繁为简</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,8 +90,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -276,10 +299,16 @@
     
     
       <header class="article-header">
-        <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/26/swagger/">swagger 使用注意事项</a>
+        <h1 class="article-title" itemprop="name">
+      swagger 使用注意事项
     </h1>
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -301,17 +330,91 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article></div>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/12/26/swagger/">swagger 使用注意事项</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">赵魁生</a></p>
+        <p><span>发布时间:</span>2016-12-26, 15:18:09</p>
+        <p><span>最后更新:</span>2016-12-26, 15:52:39</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/12/26/swagger/" title="swagger 使用注意事项">https://zhaoks.github.io/2016/12/26/swagger/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://zhaoks.github.io/2016/12/26/swagger/　　作者: 赵魁生" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+  
+</article>
+<div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本事项"><span class="toc-number">1.</span> <span class="toc-text">基本事项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#引入jar"><span class="toc-number">1.1.</span> <span class="toc-text">引入jar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#加入自动注解类"><span class="toc-number">1.2.</span> <span class="toc-text">加入自动注解类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#注意事项"><span class="toc-number">1.2.1.</span> <span class="toc-text">注意事项</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注解使用"><span class="toc-number">2.</span> <span class="toc-text">注解使用</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+    <div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"swagger 使用注意事项　| 努力做到化繁为简　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+    
+
+
+<div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/12/26/swagger/">swagger 使用注意事项</a></li></ul>
+
+
+    <script>
+        
+    </script></div>
       <footer id="footer">
     <div class="outer">
         <div id="footer-info">
